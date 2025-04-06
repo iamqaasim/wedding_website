@@ -1,0 +1,19 @@
+<!-- 
+Variables coming into this template:
+
+title - The title of the page
+-->
+
+<!-- This page is inheriting everything from the base template -->
+{% extends "base.html" %}
+
+<!-- This block tag is overriding the title block tag from the base template -->
+{% block title %} Home {% endblock %}
+
+<!-- This block tag is overriding the banner block tag from the base template -->
+{% block banner %} {% include 'carousel.html' %} {% endblock %}
+
+<!-- This block tag is overriding the content block tag from the base template -->
+{% block content%}
+  <h1> Home Page </h1>
+{% endblock %}

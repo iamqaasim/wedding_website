@@ -1,0 +1,30 @@
+<!-- This page is inheriting everything from the base template -->
+{% extends "base.html" %}
+
+<!-- This block tag is overriding the title block tag from the base template -->
+{% block title %} Login {% endblock %}
+
+
+<!-- This block tag is overriding the content block tag from the base template -->
+{% block content%}
+
+<div class="p-5 bg-body-secondary rounded-3">
+  <div class="container-fluid">
+    <h1> Login </h1>
+
+    <p>Access the website</p>
+
+    <form method="POST">
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default"> Code </span>
+        <input name="code" placeholder="insert code provided" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+      <button name="submit" type="submit" class="btn btn-outline-primary">Submit</button>
+      
+    </form>
+  </div>
+</div>
+
+{% endblock %}
